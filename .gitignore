@@ -1,0 +1,30 @@
+# /vendor
+# /node_modules
+/public/storage
+/public/assets/imgs
+/resources/assets/js/oldjs
+/resources/views/**/*_old*.php
+/config/debugbar.php
+/config/laravel-widgets.php
+/storage/debugbar
+Homestead.yaml
+Homestead.json
+/storage
+/storage/backups
+/storage/logs
+/public/uploads/*
+/.idea
+/.sass-cache
+.env
+*.swp
+
+# Database dumps
+2017-*_esto.sql
+dump_latest.sql
+
+# Local files for Docker images
+php.ini
+apache2.conf
+vhost.conf
+Dockerfile
+docker-compose.yml
