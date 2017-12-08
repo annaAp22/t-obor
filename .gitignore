@@ -1,5 +1,5 @@
-/vendor
-/node_modules
+# /vendor
+# /node_modules
 /public/storage
 /public/assets/imgs
 /resources/assets/js/oldjs
@@ -9,7 +9,7 @@
 /storage/debugbar
 Homestead.yaml
 Homestead.json
-/storage
+
 /storage/backups
 /storage/logs
 /public/uploads/*
