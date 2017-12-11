@@ -1,7 +1,7 @@
 # /vendor
 # /node_modules
-/public/storage
-/public/assets/imgs
+#/public/storage
+#/public/assets/imgs
 /resources/assets/js/oldjs
 /resources/views/**/*_old*.php
 /config/debugbar.php
@@ -11,8 +11,8 @@ Homestead.yaml
 Homestead.json
 
 /storage/backups
-/storage/logs
-/public/uploads/*
+#/storage/logs
+#/public/uploads/*
 /.idea
 /.sass-cache
 .env
