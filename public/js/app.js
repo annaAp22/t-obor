@@ -3299,6 +3299,45 @@ $(document).ready(function(){
         }
     });
 
+    $('#write_us').submit(function(e) {
+        e.preventDefault();
+        var $correct = true;
+        $('#write_us input').each(function(){
+            if(!$(this).val() || $(this).val()=='') {
+                $(this).css({"border-color": "red"});
+                $correct = false;
+            }
+        });
+        $('#write_us textarea').each(function(){
+            if(!$(this).val() || $(this).val()=='') {
+                $(this).css({"border-color": "red"});
+                $correct = false;
+            }
+        });
+
+        if($correct) {
+            var $data = {'_token': $(this).find(':input[name="_token"]').val(),
+                'name' : $(this).find(':input[name="name"]').val(),
+                'phone' : $(this).find(':input[name="phone"]').val(),
+                'email' : $(this).find(':input[name="email"]').val(),
+                'text' : $(this).find(':input[name="text"]').val()
+            };
+            $.post($(this).attr('action'), $data,  function(response){
+                if(response.result=='ok') {
+                    var $responsMessage = response.message ? response.message : 'Ваш вопрос успешно отправлен!';
+                    $('#write_us :input[name="name"]').val('');
+                    $('#write_us :input[name="phone"]').val('');
+                    $('#write_us :input[name="email"]').val('');
+                    $('#write_us textarea').val('');
+                    $('#write_us p').text($responsMessage).css('color', '#ced247');
+                    console.log($responsMessage);
+                } else {
+                    console.log(response.message ? response.message : 'При запросе произошла ошибка. Попробуйте снова.');
+                }
+            });
+        }
+    });
+
     var goodsMore = function ($page) {
         var $main = $('.filtr');
         var $data = {};

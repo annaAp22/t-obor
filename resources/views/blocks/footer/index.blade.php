@@ -3,7 +3,7 @@
 		<div class="left">
 			<div class="footer_logo">
 				<a href="index.htm">
-					<img src="/img/logo_footer.png" >
+					<img src="/img/logotype_f.png" >
 				</a>
 				<p>© 2017 <br> Торговое оборудование <br> для магазинов </p>
 			</div>

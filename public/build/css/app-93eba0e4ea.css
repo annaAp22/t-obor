@@ -1632,45 +1632,45 @@ header {
   padding-top: 15px;
   box-shadow: 0 0 18px rgba(0, 0, 2, 0.15);
   background-color: #fff; }
-  header .logo {
+  header .logotype {
     float: left;
     display: block;
     margin-right: 50px; }
-  header .heder_form {
+  header .hdr_form {
     width: 461px;
     float: left;
     margin-right: 50px;
     font-size: 12px;
     position: relative; }
-    header .heder_form label {
+    header .hdr_form label {
       position: relative;
       display: block;
       margin-bottom: 17px; }
-      header .heder_form label i {
+      header .hdr_form label i {
         position: absolute;
         top: 10px;
         left: 16px;
         font-size: 22px;
         color: #f1b333; }
-    header .heder_form input {
+    header .hdr_form input {
       width: 461px;
       height: 44px;
       border: 1px solid #d1d1d1;
       background-color: #f3f3f3;
       box-sizing: border-box;
       padding: 0 15px 0 55px; }
-      header .heder_form input:focus {
+      header .hdr_form input:focus {
         box-shadow: 0 0 18px rgba(0, 0, 2, 0.15);
         background-color: #fff;
         border-color: #fff; }
-    header .heder_form i {
+    header .hdr_form i {
       color: #ced247;
       font-size: 20px;
       padding-right: 9px;
       float: left; }
-    header .heder_form span {
+    header .hdr_form span {
       line-height: 20px; }
-      header .heder_form span:last-child {
+      header .hdr_form span:last-child {
         float: right; }
   header .datalist {
     position: absolute;
@@ -1816,11 +1816,11 @@ header {
     background-color: #fff;
     box-sizing: border-box;
     padding: 25px;
-    font-weight: bold;
-    color: #f1b333;
+    color: #000;
     z-index: 2; }
     .sidebar_nav .second_nav a:hover {
-      text-decoration: underline; }
+      text-decoration: underline;
+      color: #eebf73; }
     .sidebar_nav .second_nav .nav_item {
       padding-bottom: 25px; }
     .sidebar_nav .second_nav .submenu {
@@ -1937,7 +1937,7 @@ header {
   text-decoration: underline;
   display: inline-block;
   padding: 2px 0 2px 34px;
-  background: url("/img/viev_more.png") no-repeat center left;
+  background: url("/img/vw_more.png") no-repeat center left;
   color: #f1b333;
   font-weight: bold; }
   .viev_more:hover {

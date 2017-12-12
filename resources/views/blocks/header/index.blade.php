@@ -1,9 +1,9 @@
 <header>
 	<div class="row">
-		<a class="logo" href="/">
-			<img src="/img/logo.jpg">
+		<a class="logotype" href="/">
+			<img src="/img/logotype.jpg">
 		</a>
-		<div class="heder_form">
+		<div class="hdr_form">
 			<form class="main-header_search" method="POST" action="{{ route('search') }}">
 				{{ csrf_field() }}
 				<label>
