@@ -1,7 +1,7 @@
 /vendor
 /node_modules
 #/public/storage
-/public/assets/imgs
+#/public/assets/imgs
 /resources/assets/js/oldjs
 /resources/views/**/*_old*.php
 /config/debugbar.php
