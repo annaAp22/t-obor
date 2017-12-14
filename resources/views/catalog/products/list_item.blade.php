@@ -2,7 +2,7 @@
     $deferred = session()->get('goods.defer');
     $bookmarked = $deferred ? array_key_exists($product->id, $deferred) : false;
 @endphp
-    <li class="good-item">
+    <li class="gds-item">
         <a href="{{ route('good', $product->sysname) }}">
             <div class="img_blok">
                 <img src="/{{ $product->getImgSmallPath() }}{{ $product->img }}" />
@@ -23,7 +23,7 @@
         <div class="price">
             <b>{{ $product->price }} руб.</b>
         </div>
-        <button class="btn cart-good add-to-cart-btn"
+        <button class="btn js-cart-gds add-to-cart-btn"
                 data-quantity="1"
                 data-id="{{ $product->id }}"
                 data-img="/{{ $product->getImgSmallPath() }}{{ $product->img }}"
@@ -38,12 +38,12 @@
             <span>Арт.: </span> {{$product->article}}
         </p>
 
-        <div class="favorites defer-good {{ $bookmarked ? 'active' : false }}" data-id="{{ $product->id }}">
+        <div class="favorits defer-gds {{ $bookmarked ? 'active' : false }}" data-id="{{ $product->id }}">
             <i class="fa fa-star-o" aria-hidden="true"></i>
         </div>
 
-        <div class="hidden_product_info">
-            <button class="btn_hiden cart-good-quick"
+        <div class="hidden_gds_info">
+            <button class="btn_hiden js-cart-gds-quick"
                     data-quantity="1"
                     data-id="{{ $product->id }}"
                     data-img="/{{ $product->getImgSmallPath() }}{{ $product->img }}"

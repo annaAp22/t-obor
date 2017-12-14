@@ -15,8 +15,8 @@ class Payment extends Model
 
     protected $fillable = ['name', 'descr', 'add', 'img', 'status'];
 
-    public static $img_path = 'assets/imgs/payment-icon/';
-    public static $img_path_preview = 'assets/imgs/payment-icon/preview/';
+    public static $img_path = 'assets/imgs/paym-icon/';
+    public static $img_path_preview = 'assets/imgs/paym-icon/preview/';
 
     protected static $size_preview_width = 69;
     protected static $size_preview_height = 65;

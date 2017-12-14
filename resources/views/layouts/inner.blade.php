@@ -17,7 +17,7 @@
 <body>
 @include('blocks.header.index')
 <div class="main">
-    <div class="row">
+    <div class="row-blk">
         <div class="content_block big_content_block">
             <nav>
                 <div class="catalog_nav">

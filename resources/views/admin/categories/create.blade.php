@@ -34,7 +34,7 @@
 
         @include('admin.message')
 
-        <div class="row">
+        <div class="row-blk">
             <div class="col-xs-12">
                 <!-- PAGE CONTENT BEGINS -->
                 <form class="form-horizontal" role="form" action="{{route('admin.categories.store')}}" method="POST" enctype="multipart/form-data">

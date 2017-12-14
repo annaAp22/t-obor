@@ -15,8 +15,8 @@ class Brand extends Model
 
     protected $fillable = ['name', 'sysname', 'img', 'text', 'title', 'description', 'keywords', 'status'];
 
-    public static $img_path = 'assets/imgs/brands/';
-    public static $img_path_preview = 'assets/imgs/brands/preview/';
+    public static $img_path = 'assets/imgs/brnds/';
+    public static $img_path_preview = 'assets/imgs/brnds/preview/';
 
     protected static $size_preview_width = 195;
     protected static $size_preview_height = 195;

@@ -14,9 +14,9 @@ class PagePhoto extends Model
 
     public static $rules = ['img' => 'image'];
 
-    public static $img_path = 'assets/services/pages/';
+    public static $img_path = 'assets/imgs/pgs/';
 
-    public static $img_path_preview = 'assets/services/pages/preview/';
+    public static $img_path_preview = 'assets/imgs/pgs/preview/';
 
     protected static $size_preview_width = 253;
     protected static $size_preview_height = 175;

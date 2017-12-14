@@ -115,7 +115,7 @@
 							</div>
 							<div class="tr">
 								<div class="td td-t">
-									<div class="btn m-11 put ef tr-1 aligner tc cart-good-info"  data-id="{{$good->id}}" data-price="{{$good->price}}" @if($good->img) data-img="/{{$good->getImgMainPath().$good->img}}" @endif data-name="{{$good->name}}">
+									<div class="btn m-11 put ef tr-1 aligner tc js-cart-gds-info"  data-id="{{$good->id}}" data-price="{{$good->price}}" @if($good->img) data-img="/{{$good->getImgMainPath().$good->img}}" @endif data-name="{{$good->name}}">
 										<div class="c-c child v-c">
 											<div class="sprite-icons n-basket-3"></div>&nbsp;
 											<span class="t">В корзину</span>
@@ -123,7 +123,7 @@
 									</div>
 								</div>
 								<div class="td td-t">
-									<div class="quick-buy btn m-12 ef tr-1 aligner tc ch-i-2 cart-good-quick" data-id="{{$good->id}}" data-price="{{$good->price}}" @if($good->img) data-img="/{{$good->getImgMainPath().$good->img}}" @endif data-name="{{$good->name}}">
+									<div class="quick-buy btn m-12 ef tr-1 aligner tc ch-i-2 js-cart-gds-quick" data-id="{{$good->id}}" data-price="{{$good->price}}" @if($good->img) data-img="/{{$good->getImgMainPath().$good->img}}" @endif data-name="{{$good->name}}">
 										<div class="c-c child v-c">
 											<div class="sprite-icons n-plane-2">
 												<span class="icon sprite-icons n-plane-2-h etr-1"></span>

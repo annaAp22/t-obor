@@ -22,7 +22,7 @@
                 {{ \App\Helpers\inflectByCount($goods->total(), ['one' => 'товар', 'many' => 'товара', 'others' => 'товаров']) }}
                 в категории:  <a>{{ $goods->total() }}</a>
             </div>
-            <div class="vief_part">
+            <div class="price_wrp">
                 <b>Цена:</b>
                 <span>от</span>
                 <input type="text" name="price_from" value="{{ $minPrice }}" class="filter" id="i_range_v1" data-pos="0">

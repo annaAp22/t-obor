@@ -1,4 +1,4 @@
-<div class=" sidebar_nav">
+<div class=" sidebar_nv">
     <h3>Каталог товаров <i class="fa fa-angle-down" aria-hidden="true"></i></h3>
     <ul>
         @foreach($categories as $category)

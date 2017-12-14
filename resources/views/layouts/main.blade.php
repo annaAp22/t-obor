@@ -17,7 +17,7 @@
 <body>
 @include('blocks.header.index')
 <div class="main">
-    <div class="row">
+    <div class="row-blk">
         <div class="sidebar">
             @include('blocks.sidebar')
         </div>

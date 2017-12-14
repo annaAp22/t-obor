@@ -1,5 +1,5 @@
 <header>
-	<div class="row">
+	<div class="row-blk">
 		<a class="logotype" href="/">
 			<img src="/img/logotype.jpg">
 		</a>
@@ -19,7 +19,7 @@
 					<a href="mailto:info@t-oborud.ru"><i class="fa fa-envelope" aria-hidden="true"></i> {{ $global_settings['email_support']->value }}</a>
 				</span>
 		</div>
-		<div class="phones">
+		<div class="phones-blk">
 			<tel>
 				{!! $global_settings['phone_number']->value['1'] !!}
 			</tel>
@@ -29,7 +29,7 @@
 			</tel>
 			Бесплатно по РФ
 		</div>
-		<div class="shopcar">
+		<div class="shopcr">
 			<div class="cart">
 				<a href="{{ route('cart') }}">
 						<span>

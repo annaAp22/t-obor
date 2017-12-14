@@ -10,8 +10,8 @@ class Sertificate extends Model
 {
     protected $fillable = ['img'];
 
-    public static $img_path = 'assets/imgs/sertificates/';
-    public static $img_path_preview = 'assets/imgs/sertificates/preview/';
+    public static $img_path = 'assets/imgs/sertifics/';
+    public static $img_path_preview = 'assets/imgs/sertifics/preview/';
 
     protected static $size_preview_width = 192;
     protected static $size_preview_height = 280;

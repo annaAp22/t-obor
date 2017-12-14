@@ -1,13 +1,13 @@
 <footer>
-	<div class="row">
+	<div class="row-blk">
 		<div class="left">
-			<div class="footer_logo">
+			<div class="footer-logo">
 				<a href="index.htm">
 					<img src="/img/logotype_f.png" >
 				</a>
 				<p>© 2017 <br> Торговое оборудование <br> для магазинов </p>
 			</div>
-			<div class="footer_nav">
+			<div class="footer-nav">
 				<a href="{{ route('about') }}">О магазине</a> <br>
 				<a href="{{route('diler')}}">Дилерам</a> <br>
 				<a href="{{ route('order_payment') }}">Заказ и Оплата</a> <br>
@@ -15,7 +15,7 @@
 				<a href="{{ route('news') }}">Новости</a> <br>
 				<a href="{{ route('contacts') }}">Контакты</a>
 			</div>
-			<form class="main-footer_subscribe subscribe" method="POST" action="{{ route('subscribe') }}" id="subscribe-form">
+			<form class="main-footer_subscrib subscribe" method="POST" action="{{ route('subscribe') }}" id="subscribe-form">
 				<i class="fa fa-envelope" aria-hidden="true"></i>
 				<input type="email" name="email" placeholder="Ваш адрес @mail">
 				<input type="submit" class="btn" value="ПОЛУЧАТЬ НОВОСТИ">

@@ -7,7 +7,7 @@
 @section('content')
     @if($goods)
         <h3>Закладки</h3>
-        <div class="main_product_list you_viev">
+        <div class="main_gds_list you__viev">
             <ul>
             @foreach($goods as $key => $product)
                 @include('catalog.products.list_item', ['product' => $product])

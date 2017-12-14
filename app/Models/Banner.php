@@ -20,8 +20,8 @@ class Banner extends Model
         return self::$types[$this->type];
     }
 
-    public static $img_path = 'assets/imgs/ners/';
-    public static $img_path_preview = 'assets/imgs/ners/preview/';
+    public static $img_path = 'assets/imgs/bans/';
+    public static $img_path_preview = 'assets/imgs/bans/preview/';
 
     protected static $size_preview_width_main = 889;
     protected static $size_preview_height_main = 460;

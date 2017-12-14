@@ -1,7 +1,7 @@
 @extends('layouts.inner')
 
 @section('breadcrumbs')
-    <ul class="bread">
+    <ul class="bcrumbs">
         <li><b>Моя корзина</b></li>
     </ul>
 @endsection
@@ -27,7 +27,7 @@
                         @foreach($cart['goods'] as $product)
                             <tr data-id="{{ $product->id }}" data-actiondel="{{ route('delete', $product->id) }}/">
                                 <td>
-                                    <div class="favorites defer-good " data-id="{{ $product->id }}">
+                                    <div class="favorits defer-gds " data-id="{{ $product->id }}">
                                         <i class="fa fa-star-o" aria-hidden="true"></i>
                                     </div>
                                     <div class="table_basket_img">

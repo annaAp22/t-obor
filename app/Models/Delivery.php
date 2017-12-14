@@ -14,8 +14,8 @@ class Delivery extends Model
 
     protected $fillable = ['name', 'descr', 'price', 'img', 'status'];
 
-    public static $img_path = 'assets/imgs/delivery-icon/';
-    public static $img_path_preview = 'assets/imgs/delivery-icon/preview/';
+    public static $img_path = 'assets/imgs/deliv-icon/';
+    public static $img_path_preview = 'assets/imgs/deliv-icon/preview/';
 
     protected static $size_preview_width = 69;
     protected static $size_preview_height = 65;

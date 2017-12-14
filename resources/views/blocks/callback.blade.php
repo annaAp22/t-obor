@@ -22,7 +22,7 @@
                 </label>
                 <input type="submit" value="ОТПРАВИТЬ" class="btn">
             </div>
-            <img src="/img/phone.png" alt="" class="mobile">
+            <img src="/img/tel.png" alt="" class="mobile">
         </form>
     </div>
 </div>

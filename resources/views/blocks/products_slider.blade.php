@@ -15,14 +15,14 @@
 <div class="product_slider_main">
     <div class="product_slider_content">
         @foreach($hit_goods as $product)
-            <div class="slide you_viev slick-slide">
+            <div class="slide you__viev slick-slide">
                 <ul>
                     @include('catalog.products.list_item', ['product' => $product])
                 </ul>
             </div>
         @endforeach
         @foreach($act_goods as $product)
-            <div class="slide you_viev slick-slide">
+            <div class="slide you__viev slick-slide">
                 <ul>
                     @include('catalog.products.list_item', ['product' => $product])
 
@@ -30,7 +30,7 @@
             </div>
         @endforeach
         @foreach($new_goods as $product)
-            <div class="slide you_viev slick-slide">
+            <div class="slide you__viev slick-slide">
                 <ul>
                     @include('catalog.products.list_item', ['product' => $product])
                 </ul>

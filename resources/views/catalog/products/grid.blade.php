@@ -1,4 +1,4 @@
-<div class="main_product_list you_viev">
+<div class="main_gds_list you__viev">
     <ul>
         @foreach($products as $key => $product)
             @include('catalog.products.list_item', ['product' => $product])

@@ -25,8 +25,8 @@ class News extends Model
         static::deleted(function($newsRecord) { $newsRecord->deleteImage(); });
     }
 
-    public static $imgPath        = 'assets/imgs/news/';
-    public static $imgPathPreview = 'assets/imgs/news/preview/';
+    public static $imgPath        = 'assets/imgs/tidings/';
+    public static $imgPathPreview = 'assets/imgs/tidings/preview/';
 
     protected static $imgWidthPreview = 265;
     protected static $imgHeightPreview = 180;

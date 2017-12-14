@@ -14,7 +14,7 @@
 @endsection
 
 @section('content')
-    <div class="row">
+    <div class="row-blk">
         <div class="col-md-12">
 
             <form action="#">

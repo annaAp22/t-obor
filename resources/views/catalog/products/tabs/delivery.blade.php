@@ -1,4 +1,4 @@
-<div class="js-tabs-item product-tabs_body_item wrap-typography"  style="display: none">
+<div class="js-tabs-item product-tabs_body_item wrp-typograph"  style="display: none">
     <h3>Доставка по Москве в пределах МКАД:</h3>
     <p>Доставка осуществляется с 11-00 до 22-00 ч.,, как в рабочие, так и в выходные дни в
         зависимости от загруженности. Возможна доставка в день заказа или к определённому часу.

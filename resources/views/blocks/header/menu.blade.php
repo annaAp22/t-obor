@@ -1,4 +1,4 @@
-<div class="nav_link">
+<div class="nav__link">
     <a href="{{route('about')}}">О магазине</a>
     <a href="{{route('diler')}}">Дилерам</a>
     <a href="{{route('order_payment')}}">Заказ и Оплата</a>

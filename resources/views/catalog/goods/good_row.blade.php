@@ -61,7 +61,7 @@
                 </div>
                 <div class="td-bl">
                     <!-- активировать, если добавлено-->
-                    <div class="btn bm ef child v-c ch-i defer-good @if($good->isDefer())) active @endif" data-id="{{$good->id}}">
+                    <div class="btn bm ef child v-c ch-i defer-gds @if($good->isDefer())) active @endif" data-id="{{$good->id}}">
                         <div class="icon-wr ef">
                             <div class="icon ap sprite-icons n-defer-h etr-1"></div>
                             <div class="icon sprite-icons n-defer  etr-1"></div>
@@ -75,14 +75,14 @@
                 </div>
             </div>
         </div>
-        <div class="btn put icon-wr a-c ef hv-14 tr-1 cart-good"  data-id="{{$good->id}}" data-price="{{$good->price}}" @if($good->img) data-img="/{{$good->getImgMainPath().$good->img}}" @endif data-name="{{$good->name}}">
+        <div class="btn put icon-wr a-c ef hv-14 tr-1 js-cart-gds"  data-id="{{$good->id}}" data-price="{{$good->price}}" @if($good->img) data-img="/{{$good->getImgMainPath().$good->img}}" @endif data-name="{{$good->name}}">
             <div class="sprite-icons n-basket-3"></div>
         </div>
         <div class="hint">
             <img src="/img/cloud.png" alt=""/>
             <div class="t">Положить товар в корзину!</div>
         </div>
-        <div class="quick-buy btn m-10 ef hv-15 tr-1 aligner tc  cart-good-quick" data-id="{{$good->id}}" data-price="{{$good->price}}" @if($good->img) data-img="/{{$good->getImgMainPath().$good->img}}" @endif data-name="{{$good->name}}">
+        <div class="quick-buy btn m-10 ef hv-15 tr-1 aligner tc  js-cart-gds-quick" data-id="{{$good->id}}" data-price="{{$good->price}}" @if($good->img) data-img="/{{$good->getImgMainPath().$good->img}}" @endif data-name="{{$good->name}}">
             <div class="c-c child v-c">
                 <div class="icon-wr a-c ech-i">
                     <span class="icon sprite-icons n-plane-h etr-1"></span>

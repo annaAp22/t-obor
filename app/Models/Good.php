@@ -16,10 +16,10 @@ class Good extends Model
     protected $fillable = ['id_category', 'name', 'sysname', 'img', 'price', 'article', 'text', 'title', 'description', 'keywords',
                            'status', 'brand_id', 'descr', 'discount', 'stock', 'new', 'act', 'hit', 'video_url'];
 
-    public static $img_path = 'assets/imgs/goods/';
-    public static $img_path_preview = 'assets/imgs/goods/preview/';
-    public static $img_path_small = 'assets/imgs/goods/small/';
-    public static $img_path_main = 'assets/imgs/goods/main/';
+    public static $img_path = 'assets/imgs/gds/';
+    public static $img_path_preview = 'assets/imgs/gds/preview/';
+    public static $img_path_small = 'assets/imgs/gds/small/';
+    public static $img_path_main = 'assets/imgs/gds/main/';
 
     protected static $size_preview_width = 67;
     protected static $size_preview_height = 67;

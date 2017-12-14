@@ -34,7 +34,7 @@
 
         @include('admin.message')
 
-        <div class="row">
+        <div class="row-blk">
             <div class="col-xs-12">
 
                 <div class="tabbable">
@@ -59,7 +59,7 @@
                             <div>
                                 <div id="dynamic-table_wrapper" class="dataTables_wrapper form-inline no-footer">
                                     <!-- PAGE CONTENT BEGINS -->
-                                    <div class="row">
+                                    <div class="row-blk">
                                         <form class="multisort" action="{{route('admin.categories.sort.save')}}" method="POST">
                                             <input name="_token" type="hidden" value="{{csrf_token()}}">
                                             <div class="dd nestable" style="max-width: 985px; margin-left:10px;">

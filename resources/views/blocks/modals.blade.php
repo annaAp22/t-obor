@@ -19,12 +19,12 @@
 <div class="modal modal_add" style="display: none;">
     <div class="close"></div>
 
-    <div class="product_add">Товар добавлен в корзину</div>
-    <div class="product_blok">
-        <div class="product_img">
+    <div class="gds_add-txt">Товар добавлен в корзину</div>
+    <div class="gds_block">
+        <div class="gds_img">
             <img src="" alt="">
         </div>
-        <div class="product_name">
+        <div class="gds_name">
             <b> </b>
             <span>Артикул:</span> <el class="articul"></el>
         </div>
@@ -49,8 +49,8 @@
 
 <div class="modal modal_order" style="display: none;">
     <div class="close"></div>
-    <div class="img_blok popap_product">
-        <div class="imp_product">
+    <div class="img_blok popup_gds">
+        <div class="imp_gds">
             <img src="">
         </div>
         <div class="name"></div>

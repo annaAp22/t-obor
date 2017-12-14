@@ -25,7 +25,7 @@
 
         @include('admin.message')
 
-        <div class="row">
+        <div class="row-blk">
             <div class="col-md-12">
                 <div class="table-header">
                     Список всех новостей

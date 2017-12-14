@@ -31,7 +31,7 @@
 
         @include('admin.message')
 
-        <div class="row">
+        <div class="row-blk">
             <div class="col-xs-12">
                 <div class="tabbable">
 
@@ -50,7 +50,7 @@
                         <div>
                     <div id="dynamic-table_wrapper" class="dataTables_wrapper form-inline no-footer">
                         <!-- PAGE CONTENT BEGINS -->
-                        <div class="row">
+                        <div class="row-blk">
 
                             <table id="simple-table" class="table table-striped table-bordered table-hover">
                                 <thead>
@@ -101,7 +101,7 @@
                                 </tbody>
                             </table>
 
-                            <div class="row" style="border-bottom:none;">
+                            <div class="row-blk" style="border-bottom:none;">
                                 <div class="col-xs-6">
                                     <div class="dataTables_paginate paging_simple_numbers" id="dynamic-table_paginate">
                                         {!! $deliveries->render() !!}

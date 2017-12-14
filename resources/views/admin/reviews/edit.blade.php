@@ -20,7 +20,7 @@
         </h1>
     </div><!-- /.page-header -->
 
-    <div class="row">
+    <div class="row-blk">
         <div class="col-md-12">
 
             <form action="{{ route('admin.reviews.update', $review->id) }}" method="POST">

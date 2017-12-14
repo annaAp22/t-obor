@@ -31,7 +31,7 @@
 
         @include('admin.message')
 
-        <div class="row">
+        <div class="row-blk">
             <div class="col-xs-12">
                 <div class="tabbable">
 
@@ -50,12 +50,12 @@
                         <div>
                     <div id="dynamic-table_wrapper" class="dataTables_wrapper form-inline no-footer">
                         <!-- PAGE CONTENT BEGINS -->
-                        <div class="row">
+                        <div class="row-blk">
 
                             <!-- FILTERS -->
-                            <div class="row">
+                            <div class="row-blk">
                                 <form method="GET" action="{{route('admin.goods.index')}}">
-                                    <div class="row">
+                                    <div class="row-blk">
                                         <div class="col-xs-2" style="width: 15%">
                                             <div class="dataTables_length">
                                                 <label>На страниц
@@ -113,7 +113,7 @@
                                     </div>
                                     @if($attributes->count())
                                     @foreach($attributes->chunk(3) as $block)
-                                    <div class="row">
+                                    <div class="row-blk">
                                     @foreach($block as $attribute)
                                     <div class="col-xs-4">
                                         <div class="dataTables_filter">
@@ -135,7 +135,7 @@
                                     </div>
                                     @endforeach
                                     @endif
-                                    <div class="row">
+                                    <div class="row-blk">
                                         <div class="col-xs-2">
                                             <div class="dataTables_length">
                                                 <label>Тэг:
@@ -266,7 +266,7 @@
                                 </tbody>
                             </table>
 
-                            <div class="row" style="border-bottom:none;">
+                            <div class="row-blk" style="border-bottom:none;">
                                 <div class="col-xs-6">
                                     <div class="dataTables_paginate paging_simple_numbers" id="dynamic-table_paginate">
                                         {!! $goods->render() !!}

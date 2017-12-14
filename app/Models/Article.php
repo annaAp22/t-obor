@@ -16,8 +16,8 @@ class Article extends Model
 
     protected $fillable = ['name', 'sysname', 'img', 'date', 'descr', 'text', 'title', 'description', 'keywords', 'status'];
 
-    public static $img_path = 'assets/imgs/articles/';
-    public static $img_path_preview = 'assets/imgs/articles/preview/';
+    public static $img_path = 'assets/imgs/articls/';
+    public static $img_path_preview = 'assets/imgs/articls/preview/';
 
     protected static $size_preview_width = 360;
     protected static $size_preview_height = 239;

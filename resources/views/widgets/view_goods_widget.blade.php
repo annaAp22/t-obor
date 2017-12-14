@@ -1,6 +1,6 @@
 @if($goods->count())
 <br>
-<div class="you_viev">
+<div class="you__viev">
     <h3>
         <i class="fa fa-eye" aria-hidden="true"></i>
         Вы просматривали
@@ -8,7 +8,7 @@
     <div class="product_slider_main">
         <div class="product_slider_content">
             @foreach($goods as $product)
-            <div class="slide you_viev slick-slide">
+            <div class="slide you__viev slick-slide">
                 <ul>
                     @include('catalog.products.list_item', ['product' => $product])
                 </ul>

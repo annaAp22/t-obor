@@ -34,7 +34,7 @@
 
         @include('admin.message')
 
-        <div class="row cart">
+        <div class="row-blk cart">
             <div class="col-sm-8">
                 <div class="widget-box">
                     <div class="widget-header widget-header-flat">

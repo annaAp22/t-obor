@@ -44,7 +44,7 @@
     @endif
 
     @if(isset($category) && !empty($category->text))
-        <div class="seotext wrap-typography">
+        <div class="seotxt wrp-typograph">
             {!! $category->text !!}
         </div>
     @endif

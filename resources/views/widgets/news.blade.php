@@ -1,7 +1,7 @@
 @if($news && $news->count())
     <div class="news">
         <h3>Новости</h3>
-        <div class="news_slider">
+        <div class="news__slider">
             @foreach($sidebar_news as $newsRecord)
             <div class="slide">
                 <span>{{ App\Helpers\russianDate($newsRecord->created_at) }}</span>

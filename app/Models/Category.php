@@ -15,15 +15,15 @@ class Category extends Model
 
     protected $fillable = ['id_parent', 'name', 'sysname', 'icon', 'img', 'img_main', 'text', 'title', 'description', 'keywords', 'status', 'sort', 'new', 'act', 'hit'];
 
-    public static $icon_path = 'assets/imgs/categories/icons/';
+    public static $icon_path = 'assets/imgs/categors/icons/';
 
-    public static $img_path = 'assets/imgs/categories/';
-    public static $img_path_preview = 'assets/imgs/categories/preview/';
+    public static $img_path = 'assets/imgs/categors/';
+    public static $img_path_preview = 'assets/imgs/categors/preview/';
 
     protected static $size_preview_width = 145;
     protected static $size_preview_height = 180;
 
-    public static $img_main_path = 'assets/imgs/categories/main/';
+    public static $img_main_path = 'assets/imgs/categors/main/';
 
     protected static $size_img_main_width = 559;
     protected static $size_img_main_height = 376;

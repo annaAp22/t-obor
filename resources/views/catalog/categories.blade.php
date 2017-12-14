@@ -25,7 +25,7 @@
     </div>
 
     @if(!$category == 'root')
-        <div class="seotext wrap-typography">
+        <div class="seotxt wrp-typograph">
             {!! $category->text !!}
         </div>
     @endif

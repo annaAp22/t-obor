@@ -33,9 +33,9 @@
             Route::get('/bookmarks/', ['as' => 'bookmarks', 'uses' => 'CatalogController@bookmarks']);
 
             // Товары
-            Route::get('/catalog/detail/{sysname}/', ['as' => 'good', 'uses' => 'CatalogController@good'])->where(['sysname' => '[a-zA-Z0-9_-]+']);
+            Route::get('/gds/{sysname}/', ['as' => 'good', 'uses' => 'CatalogController@good'])->where(['sysname' => '[a-zA-Z0-9_-]+']);
             Route::get('/actions/', ['as' => 'actions', 'uses' => 'CatalogController@actions']);
-            Route::get('/new/', ['as' => 'new', 'uses' => 'CatalogController@newGoods']);
+            Route::get('/nova/', ['as' => 'new', 'uses' => 'CatalogController@newGoods']);
             Route::get('/hits/', ['as' => 'hits', 'uses' => 'CatalogController@hits']);
 
             // Отзывы
@@ -52,14 +52,19 @@
 
     });
 
-    Route::post('/cart/', ['as' => 'cart.edit', 'uses' => 'OrderController@cartEdit']);
-    Route::post('/goods/get', ['as' => 'goods.get', 'uses' => 'CatalogController@getGoods']);
-    Route::post('/good/comment/{id}', ['as' => 'good.comment', 'uses' => 'CatalogController@comment'])->where(['id' => '[0-9]+']);
+Route::post('/cart/', ['as' => 'cart.edit', 'uses' => 'OrderController@cartEdit']);
+Route::post('/goods/get', ['as' => 'goods.get', 'uses' => 'CatalogController@getGoods']);
+Route::post('/good/comment/{id}', ['as' => 'good.comment', 'uses' => 'CatalogController@comment'])->where(['id' => '[0-9]+']);
 
-    Route::get('/good/defer/{id}', ['as' => 'good.defer', 'uses' => 'CatalogController@defer'])->where(['id' => '[0-9]+']);
-    Route::get('/good/cart/add/{id}/{cnt}', ['as' => 'good.cart', 'uses' => 'CatalogController@cart'])->where(['id' => '[0-9]+', 'cnt' => '[0-9]+']);
-    Route::get('/good/cart/remove/{id}', ['as' => 'good.removeFromCart', 'uses' => 'CatalogController@removeFromCart'])->where('id', '[0-9]+');
-    
+//    Route::get('/gds/defer/{id}', ['as' => 'good.defer', 'uses' => 'CatalogController@defer'])->where(['id' => '[0-9]+']);
+//    Route::get('/gds/cart/add/{id}/{cnt}', ['as' => 'good.cart', 'uses' => 'CatalogController@cart'])->where(['id' => '[0-9]+', 'cnt' => '[0-9]+']);
+//    Route::get('/gds/cart/remove/{id}', ['as' => 'good.removeFromCart', 'uses' => 'CatalogController@removeFromCart'])->where('id', '[0-9]+');
+    //
+
+
+  Route::get('/good/defer/{id}', ['as' => 'good.defer', 'uses' => 'CatalogController@defer'])->where(['id' => '[0-9]+']);
+  Route::get('/good/cart/add/{id}/{cnt}', ['as' => 'good.cart', 'uses' => 'CatalogController@cart'])->where(['id' => '[0-9]+', 'cnt' => '[0-9]+']);
+  Route::get('/good/cart/remove/{id}', ['as' => 'good.removeFromCart', 'uses' => 'CatalogController@removeFromCart'])->where('id', '[0-9]+');
     //delete good from cart and session
     Route::post('/cart/delete/{id}', ['as' => 'delete', 'uses' => 'CatalogController@cartdelete'])->where('id', '[0-9]+');
 

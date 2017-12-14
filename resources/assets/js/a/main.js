@@ -25,7 +25,7 @@ $(document).ready(function(){
         nextArrow: '<button class="slick-next"> <i class="fa fa-angle-right" aria-hidden="true"></i> Вперед</button>'
     });
 
-    $('.news_slider').not('.slick-initialized').slick({
+    $('.news__slider').not('.slick-initialized').slick({
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -80,7 +80,7 @@ $(document).ready(function(){
         return false;
     });
 
-    $('.product_slider_main .you_viev ul li').hover(
+    $('.product_slider_main .you__viev ul li').hover(
         function(){
             $('.product_slider_main .slick-list').height(600);
         },

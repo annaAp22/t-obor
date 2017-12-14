@@ -8,7 +8,7 @@ $bookmarked = $deferred ? array_key_exists($good->id, $deferred) : false;
 @endsection
 
 @section('content')
-<div class="pruduct_page good-item">
+<div class="pruduct_page gds-item">
     <div class="product_slider">
         <h1>{{ $good->name }}</h1>
         <div class="product_slider_container">
@@ -33,7 +33,7 @@ $bookmarked = $deferred ? array_key_exists($good->id, $deferred) : false;
                 @endforeach
 
             </div>
-            <div class="favorites defer-good {{ $bookmarked ? 'active' : false }}" data-id="{{ $good->id }}">
+            <div class="favorits defer-gds {{ $bookmarked ? 'active' : false }}" data-id="{{ $good->id }}">
                 <i class="fa fa-star-o" aria-hidden="true"></i>
             </div>
         </div>
@@ -52,7 +52,7 @@ $bookmarked = $deferred ? array_key_exists($good->id, $deferred) : false;
                     <b>{{ $good->price }} руб.</b>
                 </div>
             </div>
-            <button class="btn cart-good"
+            <button class="btn js-cart-gds"
                     data-quantity="1"
                     data-id="{{ $good->id }}"
                     data-img="/{{ $good->getImgSmallPath() }}{{ $good->img }}"
@@ -64,7 +64,7 @@ $bookmarked = $deferred ? array_key_exists($good->id, $deferred) : false;
                 ПОЛОЖИТЬ В КОРЗИНУ
             </button>
 
-            <button class="btn btn_white cart-good-quick"
+            <button class="btn btn_white js-cart-gds-quick"
                     data-quantity="1"
                     data-id="{{ $good->id }}"
                     data-img="/{{ $good->getImgSmallPath() }}{{ $good->img }}"

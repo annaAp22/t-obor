@@ -1,4 +1,4 @@
-<div class="useful_articles">
+<div class="wrap_articles">
     <h3>Полезные статьи</h3>
     @foreach($articles as $article)
         <article>

@@ -14,7 +14,7 @@
                 </label>
                 <input type="submit" value="ОТПРАВИТЬ" class="btn">
             </div>
-            <img src="img/phone.png" tppabs="http://oborud.punchos.ru/img/phone.png" alt="" class="mobile">
+            <img src="img/tele.png"  alt="" class="mobile">
         </form>
     </div>
 </div>

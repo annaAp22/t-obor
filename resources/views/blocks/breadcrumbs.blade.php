@@ -1,5 +1,5 @@
 @if ($breadcrumbs)
-    <ul class="bread">
+    <ul class="bcrumbs">
         @foreach ($breadcrumbs as $breadcrumb)
             @if (!$breadcrumb->last)
                 <li><a href="{{ $breadcrumb->url }}">{{ $breadcrumb->title }}</a></li>

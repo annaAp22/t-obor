@@ -1,4 +1,4 @@
-<div class="js-tabs-item product-tabs_body_item wrap-typography" style="display: block">
+<div class="js-tabs-item product-tabs_body_item wrp-typograph" style="display: block">
     {!! $product->text !!}
     @if($product->attributes->count())
         <h3>Технические характеристики:</h3>

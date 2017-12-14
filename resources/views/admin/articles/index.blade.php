@@ -31,7 +31,7 @@
 
         @include('admin.message')
 
-        <div class="row">
+        <div class="row-blk">
             <div class="col-xs-12">
                 <div class="tabbable">
 
@@ -50,12 +50,12 @@
                         <div>
                     <div id="dynamic-table_wrapper" class="dataTables_wrapper form-inline no-footer">
                         <!-- PAGE CONTENT BEGINS -->
-                        <div class="row">
+                        <div class="row-blk">
 
                             <!-- FILTERS -->
-                            <div class="row">
+                            <div class="row-blk">
                                 <form method="GET" action="{{route('admin.articles.index')}}">
-                                    <div class="row">
+                                    <div class="row-blk">
                                         <div class="col-xs-2">
                                             <div>
                                                 <label>На страниц
@@ -109,7 +109,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="row">
+                                    <div class="row-blk">
 
                                         <div class="col-xs-4">
                                             <div>
@@ -235,7 +235,7 @@
                                 </tbody>
                             </table>
 
-                            <div class="row" style="border-bottom:none;">
+                            <div class="row-blk" style="border-bottom:none;">
                                 <div class="col-xs-6">
                                     <div class="dataTables_paginate paging_simple_numbers" id="dynamic-table_paginate">
                                         {!! $articles->render() !!}

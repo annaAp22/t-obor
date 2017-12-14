@@ -22,7 +22,7 @@
 
         @include('admin.message')
 
-        <div class="row">
+        <div class="row-blk">
             <div class="col-xs-12 ace-thumbnails">
 
                 <form action="{{ route('admin.news.store') }}" class="form-horizontal" method="POST" enctype="multipart/form-data">

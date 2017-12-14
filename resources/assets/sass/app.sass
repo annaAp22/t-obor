@@ -69,7 +69,7 @@ ul, ol
 .btn, input, textarea, button
   outline: none
 
-.row
+.row,.row-blk
   position: relative
   width: 1160px
   margin: 0 auto
@@ -202,7 +202,7 @@ header
         color: $color-orange
         font-weight: bold
         float: right
-  .phones
+  .phones-blk
     float: left
     width: 155px
     color: #606060
@@ -214,7 +214,7 @@ header
       display: block
       &:last-child
         margin-top: 15px
-  .shopcar
+  .shopcr
     width: 172px
     height: 120px
     background-color: #f3f3f3
@@ -256,7 +256,8 @@ header
           color: #989898
           font-size: 40px
 
-.main .row
+.main .row,
+.main .row-blk
   display: -webkit-flex
   display: -moz-flex
   display: -ms-flex
@@ -270,7 +271,7 @@ header
   width: 278px
   margin-right: 15px
 
-.sidebar_nav
+.sidebar_nv
   margin-bottom: 20px
   h3
     color: $color-white
@@ -389,7 +390,7 @@ header
     background-color: $color-orange
     color: $color-white
 
-.useful_articles
+.wrap_articles
   margin-bottom: 60px
   h3
     padding-bottom: 30px
@@ -443,7 +444,7 @@ header
 
 .news
   position: relative
-  .news_slider
+  .news__slider
     margin-bottom: 40px
   h3
     font-size: 20px
@@ -510,7 +511,7 @@ nav
   line-height: 48px
   background-color: #f3f3f3
   position: relative
-  .nav_link
+  .nav__link
     display: -webkit-flex
     display: -moz-flex
     display: -ms-flex
@@ -552,7 +553,7 @@ nav
     &:hover
       background-color: #B0B43D
 
-.bread
+.bcrumbs
   position: relative
   padding-left: 38px
   margin-bottom: 22px
@@ -573,9 +574,9 @@ nav
     float: left
     padding-right: 30px
     margin-right: 20px
-    background: url("/img/bread.svg") no-repeat center right
+    background: url("/img/triangle.svg") no-repeat center right
     &:last-child
-      background: url("/img/bread2.svg") no-repeat center right
+      background: url("/img/triangle2.svg") no-repeat center right
   a:hover
     text-decoration: underline
 
@@ -607,18 +608,18 @@ nav
     margin: 0 auto 30px
     font-size: 14px
 
-.slide.you_viev
+.slide.you__viev
   width: 204px
   margin-right: 16px
 
-.big_content_block .you_viev ul li
+.big_content_block .you__viev ul li
   margin-right: 35px
   &:nth-child(4n+4)
     margin-right: 35px
   &:last-child, &:nth-child(5n+5)
     margin-right: 0
 
-.you_viev
+.you__viev
   text-align: center
   outline: none
   h3
@@ -654,17 +655,17 @@ nav
         border-color: #CED247
         -webkit-box-shadow: 0 5px 10px rgba(20, 39, 53, 0.2)
         box-shadow: 0 5px 10px rgba(20, 39, 53, 0.2)
-        .hidden_product_info
+        .hidden_gds_info
           display: block
           opacity: 1
-        .favorites
+        .favorits
           opacity: 1
         .img_blok img
           position: absolute
           top: 0
           left: 0
           z-index: -1
-    .favorites
+    .favorits
       opacity: 0
       position: absolute
       top: 185px
@@ -708,7 +709,7 @@ nav
       span
         color: #b9c025
 
-.hidden_product_info
+.hidden_gds_info
   position: absolute
   top: 99.5%
   left: -1px
@@ -851,7 +852,7 @@ footer
   width: 100%
   min-width: 1160px
   overflow: hidden
-  .row
+  .row,.row-blk
     display: -webkit-flex
     display: -moz-flex
     display: -ms-flex
@@ -861,7 +862,7 @@ footer
     display: flex
   .left
     width: 735px
-  .footer_logo
+  .footer-logo
     float: left
     width: 295px
     height: 300px
@@ -872,7 +873,7 @@ footer
       font-size: 16px
       color: #4f4a4a
       width: 190px
-  .footer_nav
+  .footer-nav
     float: left
     padding: 40px 0 0 58px
     font-size: 16px
@@ -955,7 +956,7 @@ hr
 .danger
   padding: 45px 60px 40px 80px
   border: 2px solid $color-orange
-  background: url("/img/danger.svg") no-repeat top 15px left 20px
+  background: url("/img/exc.svg") no-repeat top 15px left 20px
   margin-bottom: 45px
 
 .danger_mini
@@ -1260,7 +1261,7 @@ h3.more_article
     top: 0
     right: 0
     cursor: pointer
-    background: $color-white url("/img/close.svg") no-repeat center
+    background: $color-white url("/img/cross_cl.svg") no-repeat center
     -webkit-transition: all 0.15s ease-in-out
     transition: all 0.15s ease-in-out
     &:hover
@@ -1301,7 +1302,7 @@ h3.more_article
   h3
     padding-bottom: 15px
 
-.popap_product
+.popup_gds
   height: 370px
   background-color: $color-white
   -webkit-box-sizing: border-box
@@ -1312,7 +1313,7 @@ h3.more_article
   left: 0
   width: 283px
   margin: 0
-  .imp_product
+  .imp_gds
     width: 181px
     height: 184px
     border: 1px solid #d1d1d1
@@ -1335,7 +1336,7 @@ h3.more_article
   background-color: $color-white
   margin: -200px 0 0 -367px
   padding: 50px 60px
-  .product_add
+  .gds_add-txt
     height: 42px
     line-height: 42px
     padding-left: 73px
@@ -1351,10 +1352,10 @@ h3.more_article
       top: 0
       width: 42px
       height: 42px
-      background: $color-orange url("/img/checked.svg") no-repeat center
+      background: $color-orange url("/img/mark.svg") no-repeat center
       -webkit-border-radius: 100%
       border-radius: 100%
-  .product_img
+  .gds_img
     width: 101px
     height: 103px
     border: 1px solid #d1d1d1
@@ -1364,7 +1365,7 @@ h3.more_article
     img
       width: 100%
       height: 100%
-  .product_name
+  .gds_name
     width: 180px
     float: left
     b
@@ -1373,7 +1374,7 @@ h3.more_article
     span
       color: #b9c025
       font-weight: bold
-  .product_blok:after
+  .gds_block:after
     content: ''
     display: block
     clear: both
@@ -1441,9 +1442,9 @@ h3.more_article
       &:hover
         background-color: #d1d1d1
     .slick-prev
-      background: $color-white url("/img/arrt.svg") no-repeat center
+      background: $color-white url("/img/delta.svg") no-repeat center
     .slick-next
-      background: $color-white url("/img/arrd.svg") no-repeat center
+      background: $color-white url("/img/deltad.svg") no-repeat center
     .slide
       width: 73px
       //height: 73px
@@ -1469,7 +1470,7 @@ h3.more_article
           height: 100%
           z-index: 3
         &:after
-          background: url("/img/lupa.svg") no-repeat center
+          background: url("/img/loupe.svg") no-repeat center
         &:before
           background-color: $color-orange
           opacity: 0.7
@@ -1505,7 +1506,7 @@ h3.more_article
     display: -webkit-box
     display: -ms-flexbox
     display: flex
-  .favorites
+  .favorits
     top: 7px
     right: 9px
     left: auto
@@ -1573,7 +1574,7 @@ h3.more_article
     padding: 0 35px 0 15px
     font-size: 16px
     font-weight: bold
-    background: url("/img/arrd.svg") no-repeat center right 8px
+    background: url("/img/deltad.svg") no-repeat center right 8px
     -moz-appearance: none
     text-indent: 0.01px
     text-overflow: ''
@@ -1582,7 +1583,7 @@ h3.more_article
     -webkit-appearance: none !important
     appearance: none !important
     &:focus:hover
-      background: url("/img/arrt.svg") no-repeat center right 8px
+      background: url("/img/delta.svg") no-repeat center right 8px
     &::-ms-expand
       display: none
   .select
@@ -1611,9 +1612,9 @@ h3.more_article
       display: -webkit-box
       -webkit-box-flex: 1
       margin: 0 2px
-      background: url("/img/point.png") center bottom 2px repeat-x
+      background: url("/img/dot.png") center bottom 2px repeat-x
 
-.favorites
+.favorits
   width: 38px
   height: 38px
   -webkit-box-shadow: 0 0 13px rgba(0, 0, 2, 0.25)
@@ -1670,7 +1671,7 @@ input
     font-size: 16px
     font-weight: bold
     padding: 0 7px 0 17px
-    background: url("/img/number.svg") no-repeat center right 7px
+    background: url("/img/numb.svg") no-repeat center right 7px
   &::-webkit-outer-spin-button, &::-webkit-inner-spin-button
     opacity: 0
 
@@ -1750,7 +1751,7 @@ input
       left: -1px
       top: -1px
       display: block
-      background: url("/img/hover_ls.png") no-repeat center
+      background: url("/img/hvr_ls.png") no-repeat center
       height: 142px
       width: 204px
       -webkit-transition: all 0.15s ease-in-out
@@ -1767,7 +1768,7 @@ ol.ponter_mini li:before
 .filtr
   position: relative
   margin-top: -13px
-  .vief_part
+  .price_wrp
     height: 26px
     line-height: 23px
     border: 1px solid #d1d1d1
@@ -1838,11 +1839,11 @@ ol.ponter_mini li:before
     span
       width: 23px
       height: 19px
-      background: url("/img/range_p.svg") no-repeat center
+      background: url("/img/trigon_p.svg") no-repeat center
       border: none
       outline: none
     .ui-slider-range
-      background: url("/img/ranger_bg.jpg") center
+      background: url("/img/trigon_bg.jpg") center
       height: 13px
       -webkit-border-radius: none
       border-radius: none
@@ -1876,7 +1877,7 @@ ol.ponter_mini li:before
       right: 8px
       width: 11px
       height: 9px
-      background: url("/img/arrowsd.svg") center
+      background: url("/img/arr_black.svg") center
     select
       width: 0
       height: 0
@@ -1886,7 +1887,7 @@ ol.ponter_mini li:before
     font-size: 16px
     font-family: oseb
 
-.main_product_list
+.main_gds_list
   .news_all
     border-top: 1px solid #d1d1d1
   li
@@ -1978,7 +1979,7 @@ ol.ponter_mini li:before
     line-height: 100px
     font-family: oseb
     padding-left: 29px
-    background: url("/img/main_carosel.svg") no-repeat center left
+    background: url("/img/m_carosel.svg") no-repeat center left
     margin-bottom: 14px
     a
       font-size: 60px
@@ -1992,7 +1993,7 @@ ol.ponter_mini li:before
     line-height: 66px
     color: $color-orange
     font-size: 36px
-    background: url("/img/price_ot.png") no-repeat center
+    background: url("/img/lbl.png") no-repeat center
     margin-top: 20px
   .slick-arrow
     display: block
@@ -2007,7 +2008,7 @@ ol.ponter_mini li:before
     top: 50%
     margin-top: -43px
     text-indent: -9999px
-    background-image: url("/img/arr_l.svg")
+    background-image: url("/img/to_l.svg")
     background-repeat: no-repeat
     background-position: center
     font-size: 0
@@ -2040,7 +2041,7 @@ ol.ponter_mini li:before
   .slick-next
     right: 0
     z-index: 1
-    background-image: url("/img/arr_r.svg")
+    background-image: url("/img/to_r.svg")
     background-repeat: no-repeat
     background-position: center
     &:before
@@ -2226,11 +2227,11 @@ a.a_read_news
       font-family: oseb
       &:before
         top: 8px
-  .bread
+  .bcrumbs
     font-size: 18px
     margin-bottom: 30px
     li
-      background: url("/img/arr_bread.svg") no-repeat center right
+      background: url("/img/arr_tr.svg") no-repeat center right
       line-height: 1
       padding-bottom: 1.5px
       padding-right: 35px
@@ -2322,7 +2323,7 @@ a.a_read_news
       position: absolute
       top: 30px
       left: 30px
-    .favorites
+    .favorits
       z-index: 1
       top: 15px
       left: 15px
@@ -2349,7 +2350,7 @@ a.a_read_news
       width: 22px
       height: 22px
       border: 2px solid #d1d1d1
-      background: url("/img/delete.svg") no-repeat center
+      background: url("/img/cross.svg") no-repeat center
       z-index: 1
       cursor: pointer
       &:hover
@@ -2407,7 +2408,7 @@ a.a_read_news
   padding: 0 35px 0 15px
   font-size: 16px
   font-weight: bold
-  background: url("/img/arrd.svg") no-repeat center right 8px
+  background: url("/img/deltad.svg") no-repeat center right 8px
   -webkit-border-radius: 0
   border-radius: 0
   line-height: 39px
@@ -2673,7 +2674,7 @@ a.a_read_news
       display: -webkit-box
       -webkit-box-flex: 1
       margin: 0 2px
-      background: url("/img/points_b.png") left bottom 1px repeat-x
+      background: url("/img/dots_b.png") left bottom 1px repeat-x
 
 .letter_spes
   letter-spacing: 1.5px
@@ -2686,10 +2687,10 @@ footer form input[type=email]
   margin: 0 25px
   border: none
 
-.you_viev ul .favorites.active
+.you__viev ul .favorits.active
   opacity: 1
 
-.favorites.active
+.favorits.active
   background: #EDB72B
   color: $color-white
   &:hover:before
@@ -2761,7 +2762,7 @@ footer form input[type=email]
   padding-left: 18px
   li
     padding: 4px 0px
-.wrap-typography
+.wrp-typograph
   line-height: 1.5
   h2
     color: $color-orange

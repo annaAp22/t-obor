@@ -22,7 +22,7 @@
 
     @include('admin.message')
 
-    <div class="row">
+    <div class="row-blk">
         <div class="col-md-12">
 
             <form action="{{ route('admin.reviews.store') }}" method="POST">

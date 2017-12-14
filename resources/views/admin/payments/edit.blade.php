@@ -34,7 +34,7 @@
 
         @include('admin.message')
 
-        <div class="row">
+        <div class="row-blk">
             <div class="col-xs-12 ace-thumbnails">
                 <!-- PAGE CONTENT BEGINS -->
                 <form class="form-horizontal" role="form" action="{{route('admin.payments.update', $payment->id)}}" method="POST" enctype="multipart/form-data">

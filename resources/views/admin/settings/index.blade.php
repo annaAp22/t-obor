@@ -31,7 +31,7 @@
 
         @include('admin.message')
 
-        <div class="row">
+        <div class="row-blk">
             <div class="col-xs-12">
 
                 <div class="table-header">
@@ -48,10 +48,10 @@
                 <div>
                     <div id="dynamic-table_wrapper" class="dataTables_wrapper form-inline no-footer">
                         <!-- PAGE CONTENT BEGINS -->
-                        <div class="row">
+                        <div class="row-blk">
 
                             <!-- FILTERS -->
-                            <div class="row">
+                            <div class="row-blk">
                                 <form method="GET" action="{{route('admin.settings.index')}}">
                                     <div class="col-xs-3">
                                         <div class="dataTables_length">
@@ -126,7 +126,7 @@
                                 </tbody>
                             </table>
 
-                            <div class="row" style="border-bottom:none;">
+                            <div class="row-blk" style="border-bottom:none;">
                                 <div class="col-xs-6">
                                     <div class="dataTables_paginate paging_simple_numbers" id="dynamic-table_paginate">
                                         {!! $settings->render() !!}
